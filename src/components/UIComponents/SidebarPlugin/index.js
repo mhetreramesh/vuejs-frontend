@@ -9,12 +9,12 @@ const SidebarStore = {
       path: '/admin/overview'
     },
     {
-      name: 'User Profile',
+      name: 'THC',
       icon: 'ti-user',
-      path: '/admin/stats'
+      path: '/admin/thc'
     },
     {
-      name: 'Table List',
+      name: 'Polling',
       icon: 'ti-view-list-alt',
       path: '/admin/table-list'
     },
