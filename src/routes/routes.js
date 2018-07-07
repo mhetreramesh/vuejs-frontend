@@ -5,11 +5,13 @@ import NotFound from '../components/GeneralViews/NotFoundPage.vue'
 // Admin pages
 import Overview from 'src/components/Dashboard/Views/Overview.vue'
 import UserProfile from 'src/components/Dashboard/Views/UserProfile.vue'
+import TeamHealthCheck from 'src/components/Dashboard/Views/TeamHealthCheck.vue'
 import Notifications from 'src/components/Dashboard/Views/Notifications.vue'
 import Icons from 'src/components/Dashboard/Views/Icons.vue'
 import Maps from 'src/components/Dashboard/Views/Maps.vue'
 import Typography from 'src/components/Dashboard/Views/Typography.vue'
 import TableList from 'src/components/Dashboard/Views/TableList.vue'
+import Users from 'src/components/Dashboard/Views/Users.vue'
 
 const routes = [
   {
@@ -30,6 +32,16 @@ const routes = [
       {
         path: 'thc',
         name: 'thc',
+        component: TeamHealthCheck
+      },
+      {
+        path: 'users',
+        name: 'users',
+        component: Users
+      },
+      {
+        path: 'user',
+        name: 'user',
         component: UserProfile
       },
       {

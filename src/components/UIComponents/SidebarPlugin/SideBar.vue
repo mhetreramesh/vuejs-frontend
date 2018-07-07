@@ -11,7 +11,7 @@
             <div class="logo-img">
                 <img src="static/img/tb.jpg" alt="">
             </div>
-          TB.Admin
+          TB.Botman
         </a>
       </div>
       <slot>

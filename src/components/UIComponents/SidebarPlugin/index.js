@@ -22,6 +22,11 @@ const SidebarStore = {
       name: 'Marketing',
       icon: 'ti-flag-alt',
       path: '/admin/notifications'
+    },
+    {
+      name: 'Users',
+      icon: 'ti-user',
+      path: '/admin/users'
     }
   ],
   displaySidebar (value) {
