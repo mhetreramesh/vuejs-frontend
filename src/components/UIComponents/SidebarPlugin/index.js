@@ -5,37 +5,22 @@ const SidebarStore = {
   sidebarLinks: [
     {
       name: 'Dashboard',
-      icon: 'ti-panel',
+      icon: 'ti-home',
       path: '/admin/overview'
     },
     {
       name: 'THC',
-      icon: 'ti-user',
+      icon: 'ti-pulse',
       path: '/admin/thc'
     },
     {
-      name: 'Polling',
-      icon: 'ti-view-list-alt',
+      name: 'Internal Polls',
+      icon: 'ti-panel',
       path: '/admin/table-list'
     },
     {
-      name: 'Typography',
-      icon: 'ti-text',
-      path: '/admin/typography'
-    },
-    {
-      name: 'Icons',
-      icon: 'ti-pencil-alt2',
-      path: '/admin/icons'
-    },
-    {
-      name: 'Maps',
-      icon: 'ti-map',
-      path: '/admin/maps'
-    },
-    {
-      name: 'Notifications',
-      icon: 'ti-bell',
+      name: 'Marketing',
+      icon: 'ti-flag-alt',
       path: '/admin/notifications'
     }
   ],
