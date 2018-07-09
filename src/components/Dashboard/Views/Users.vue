@@ -1,10 +1,10 @@
 <template>
     <div class="row">
       
-      <div class="col-md-7">
-        <members-card></members-card>
+      <div class="col-md-6">
+        <user-list-card></user-list-card>
       </div>
-      <div class="col-md-5">
+      <div class="col-md-6">
        <user-card></user-card>
       </div>
     </div>
@@ -12,13 +12,13 @@
 <script>
   import EditProfileForm from './UserProfile/EditProfileForm.vue'
   import UserCard from './UserProfile/UserCard.vue'
-  import MembersCard from './UserProfile/MembersCard.vue'
+  import UserListCard from './UserProfile/UserListCard.vue'
 
   export default {
     components: {
       EditProfileForm,
       UserCard,
-      MembersCard
+      UserListCard
     }
   }
 
