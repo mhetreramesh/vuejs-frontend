@@ -46,8 +46,8 @@
             subTitle: 'Questions Answered'
           },
           {
-            title: '24',
-            subTitle: 'Spent'
+            title: '10',
+            subTitle: 'Followers'
           }
         ]
       }
