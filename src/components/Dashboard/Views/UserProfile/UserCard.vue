@@ -39,14 +39,14 @@
         details: [
           {
             title: '12',
-            subTitle: 'Files'
+            subTitle: 'THC Attended'
           },
           {
-            title: '2GB',
-            subTitle: 'Used'
+            title: '22',
+            subTitle: 'Questions Answered'
           },
           {
-            title: '24,6$',
+            title: '24',
             subTitle: 'Spent'
           }
         ]

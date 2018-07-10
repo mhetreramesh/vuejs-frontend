@@ -4,14 +4,11 @@
       <div class="col-lg-8 col-md-7">
         <div class="card">
           <paper-table :title="table1.title" :sub-title="table1.subTitle" :data="table1.data" :columns="table1.columns">
-
           </paper-table>
         </div>
       </div>
       <div class="col-lg-4 col-md-5">
-       
         <members-card>
-
         </members-card>
       </div>
     </div>

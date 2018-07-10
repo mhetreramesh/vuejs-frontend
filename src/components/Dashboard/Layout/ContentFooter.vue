@@ -9,7 +9,7 @@
         </ul>
       </nav>
       <div class="copyright pull-right">
-        &copy; Coded with
+        &copy; Made with
         <i class="fa fa-heart heart"></i> by
         <a href="http://fullstackworld.com" target="_blank">Ramesh Mhetre</a>.
       </div>
