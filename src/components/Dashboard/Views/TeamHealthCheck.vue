@@ -21,41 +21,34 @@
   import PaperTable from 'components/UIComponents/PaperTable.vue'
   import UserCard from './UserProfile/UserCard.vue'
   import MembersCard from './UserProfile/MembersCard.vue'
-  const tableColumns = ['Id', 'Name', 'Salary', 'Country', 'City']
+  const tableColumns = ['Id', 'Topic', 'City']
   const tableData = [{
     id: 1,
-    name: 'Dakota Rice',
+    topic: 'Dakota Rice',
     salary: '$36.738',
     country: 'Niger',
     city: 'Oud-Turnhout'
   },
   {
     id: 2,
-    name: 'Minerva Hooper',
+    topic: 'Minerva Hooper',
     salary: '$23,789',
     country: 'Curaçao',
     city: 'Sinaai-Waas'
   },
   {
     id: 3,
-    name: 'Sage Rodriguez',
+    topic: 'Sage Rodriguez',
     salary: '$56,142',
     country: 'Netherlands',
     city: 'Baileux'
   },
   {
     id: 4,
-    name: 'Philip Chaney',
+    topic: 'Philip Chaney',
     salary: '$38,735',
     country: 'Korea, South',
     city: 'Overland Park'
-  },
-  {
-    id: 5,
-    name: 'Doris Greene',
-    salary: '$63,542',
-    country: 'Malawi',
-    city: 'Feldkirchen in Kärnten'
   }]
 
   export default {
@@ -68,14 +61,8 @@
     data () {
       return {
         table1: {
-          title: 'Stripped Table',
-          subTitle: 'Here is a subtitle for this table',
-          columns: [...tableColumns],
-          data: [...tableData]
-        },
-        table2: {
-          title: 'Table on Plain Background',
-          subTitle: 'Here is a subtitle for this table',
+          title: 'Start THC',
+          subTitle: '',
           columns: [...tableColumns],
           data: [...tableData]
         }
