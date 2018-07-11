@@ -2,10 +2,8 @@
   <div class="card">
     <div class="header">
       <div class="row">
-      <h2 class="title col-xs-9">
-        {{title}}
-      </h2>
-      <div class="col-xs-3 text-right">
+        <h2 class="title col-xs-9">{{title}}</h2>
+        <div class="col-xs-3 text-right">
           <a class="color-green" href="#">
             <i class="fa fa-plus-circle fa-3x"></i>
           </a>
@@ -17,7 +15,7 @@
       <ul class="list-unstyled team-members">
           <li class="row" v-for="team in teams" :class="{ active: isActive(team) }">
             <a href="#" @click="teamChanged(team)">
-            <div class="col-xs-6">
+            <div class="col-xs-9">
               <span class="text-black">{{team.name}} </span>
             </div>
   

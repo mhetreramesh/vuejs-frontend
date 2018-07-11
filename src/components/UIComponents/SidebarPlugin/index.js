@@ -14,7 +14,7 @@ const SidebarStore = {
       path: '/admin/thc'
     },
     {
-      name: 'Internal Polls',
+      name: 'THC Templates',
       icon: 'ti-panel',
       path: '/admin/table-list'
     },

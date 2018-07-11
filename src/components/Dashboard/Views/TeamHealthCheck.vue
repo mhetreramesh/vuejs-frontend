@@ -1,68 +1,58 @@
 <template>
     <div class="row">
-      
-      <div class="col-lg-8 col-md-7">
-        <div class="card">
-          <paper-table :title="table1.title" :sub-title="table1.subTitle" :data="table1.data" :columns="table1.columns">
-          </paper-table>
-        </div>
+      <div class="col-lg-9 col-md-8">
+        <t-h-c-history>
+        </t-h-c-history>
       </div>
-      <div class="col-lg-4 col-md-5">
-        <members-card>
-        </members-card>
+      <div class="col-lg-3 col-md-4">
+        <div class="card">
+          <div class="header">
+            <h4 class="title col-xs-12">
+              All Teams
+            </h4>
+            <hr >
+          </div>
+          <div class="content">
+            <ul class="list-unstyled team-members">
+                <li class="row" v-for="team in teams">
+                  <div class="col-xs-12">
+                    <span class="text-black">{{team.name}} </span> - <span class="badge">{{team.membersCount}}</span>
+                  </div>
+                </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
 </template>
 <script>
-  import EditProfileForm from './UserProfile/EditProfileForm.vue'
-  import PaperTable from 'components/UIComponents/PaperTable.vue'
-  import UserCard from './UserProfile/UserCard.vue'
-  import MembersCard from './UserProfile/MembersCard.vue'
-  const tableColumns = ['Id', 'Topic', 'City']
-  const tableData = [{
-    id: 1,
-    topic: 'Dakota Rice',
-    salary: '$36.738',
-    country: 'Niger',
-    city: 'Oud-Turnhout'
-  },
-  {
-    id: 2,
-    topic: 'Minerva Hooper',
-    salary: '$23,789',
-    country: 'Curaçao',
-    city: 'Sinaai-Waas'
-  },
-  {
-    id: 3,
-    topic: 'Sage Rodriguez',
-    salary: '$56,142',
-    country: 'Netherlands',
-    city: 'Baileux'
-  },
-  {
-    id: 4,
-    topic: 'Philip Chaney',
-    salary: '$38,735',
-    country: 'Korea, South',
-    city: 'Overland Park'
-  }]
-
+  import TeamsList from './UserProfile/TeamsList.vue'
+  import THCHistory from './THC/THCHistory.vue'
+  
   export default {
     components: {
-      EditProfileForm,
-      UserCard,
-      MembersCard,
-      PaperTable
+      TeamsList,
+      THCHistory
     },
     data () {
       return {
-        table1: {
-          title: 'Start THC',
-          subTitle: '',
-          columns: [...tableColumns],
-          data: [...tableData]
-        }
+        teams: [
+          {
+            id: '1',
+            name: 'DEV',
+            membersCount: 24
+          },
+          {
+            id: '1',
+            name: 'Marketing',
+            membersCount: 5
+          },
+          {
+            id: '1',
+            name: 'Sales',
+            membersCount: 7
+          }
+        ]
       }
     }
   }

@@ -7,7 +7,7 @@
     <div class="content">
       <ul class="list-unstyled team-members">
           <li class="row" v-for="user in users" :class="{ active: isActive(user) }"><span class="badge">{{user.team}}</span>
-            <a href="#" @click="userChanged(user)">
+            <a href="#/admin/users?id=1" @click="userChanged(user)">
             <div class="col-xs-3">
               <div class="avatar">
                 <img :src="user.image" alt="Circle Image" class="img-circle img-no-padding img-responsive">
