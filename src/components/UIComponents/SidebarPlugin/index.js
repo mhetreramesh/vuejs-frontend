@@ -26,7 +26,7 @@ const SidebarStore = {
     {
       name: 'Teams',
       icon: 'ti-flag-alt',
-      path: '/admin/notifications'
+      path: '/admin/teams'
     }
   ],
   displaySidebar (value) {

@@ -12,6 +12,7 @@ import Maps from 'src/components/Dashboard/Views/Maps.vue'
 import Typography from 'src/components/Dashboard/Views/Typography.vue'
 import TableList from 'src/components/Dashboard/Views/TableList.vue'
 import Users from 'src/components/Dashboard/Views/Users.vue'
+import Teams from 'src/components/Dashboard/Views/Teams.vue'
 
 const routes = [
   {
@@ -38,6 +39,11 @@ const routes = [
         path: 'users',
         name: 'users',
         component: Users
+      },
+      {
+        path: 'teams',
+        name: 'teams',
+        component: Teams
       },
       {
         path: 'user',
