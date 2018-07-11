@@ -35,25 +35,46 @@
         title: 'Q2-2018 DEV',
         topics: [
           {
-            name: 'Ramesh M',
-            shortname: 'ram',
+            name: 'Mission',
             details: 'sdsd@tb.com',
-            slackname: 'ssdsd',
-            team: 'DEV'
+            red: 0,
+            green: 10,
+            yellow: 3
           },
           {
-            name: 'Sven',
-            shortname: 'svt',
+            name: 'Teamwork',
             details: 'rer@emdsd.com',
-            slackname: '',
-            team: 'SYSOPS'
+            red: 1,
+            green: 7,
+            yellow: 5
           },
           {
-            name: 'Stannis',
-            shortname: 'sas',
+            name: 'Pawns or Players',
             details: 'sdjsdj@sdsdsdf.com',
-            slackname: 'ss',
-            team: 'DEVPROJ'
+            red: 3,
+            green: 4,
+            yellow: 6
+          },
+          {
+            name: 'Suitable Process',
+            details: 'sdjsdj@sdsdsdf.com',
+            red: 3,
+            green: 4,
+            yellow: 6
+          },
+          {
+            name: 'Delivering Quality',
+            details: 'sdjsdj@sdsdsdf.com',
+            red: 3,
+            green: 4,
+            yellow: 6
+          },
+          {
+            name: 'Data Driven Decisions',
+            details: 'sdjsdj@sdsdsdf.com',
+            red: 3,
+            green: 4,
+            yellow: 6
           }
         ],
         currentUser: null
