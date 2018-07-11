@@ -6,7 +6,7 @@
     </div>
     <div class="content">
       <ul class="list-unstyled team-members">
-          <li class="row" v-for="user in users" :class="{ active: isActive(user) }">
+          <li class="row" v-for="user in users" :class="{ active: isActive(user) }"><span class="badge">{{user.team}}</span>
             <a href="#" @click="userChanged(user)">
             <div class="col-xs-3">
               <div class="avatar">
@@ -14,7 +14,7 @@
               </div>
             </div>
             <div class="col-xs-6">
-              <span class="text-black">{{user.name}}</span>
+              <span class="text-black">{{user.name}} <small>({{user.shortname}})</small></span>
               <br>
               <span class="text-info">
                 <small>{{user.email}}</small>
@@ -36,22 +36,28 @@
   export default {
     data () {
       return {
-        title: 'TB.Team',
+        title: 'TB.Users',
         users: [
           {
             image: 'static/img/faces/face-3.jpg',
-            name: 'Dj Khaled',
-            email: 'sdsd@tb.com'
+            name: 'Ramesh M',
+            shortname: 'ram',
+            email: 'sdsd@tb.com',
+            team: 'DEV'
           },
           {
             image: 'static/img/faces/face-1.jpg',
-            name: 'Creative Tim',
-            email: 'rer@emdsd.com'
+            name: 'Sven',
+            shortname: 'svt',
+            email: 'rer@emdsd.com',
+            team: 'SYSOPS'
           },
           {
             image: 'static/img/faces/face-2.jpg',
-            name: 'Flume Test',
-            email: 'sdjsdj@sdsdsdf.com'
+            name: 'Stannis',
+            shortname: 'sas',
+            email: 'sdjsdj@sdsdsdf.com',
+            team: 'DEVPROJ'
           }
         ],
         currentUser: null

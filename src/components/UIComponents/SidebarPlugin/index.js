@@ -19,14 +19,14 @@ const SidebarStore = {
       path: '/admin/table-list'
     },
     {
-      name: 'Marketing',
-      icon: 'ti-flag-alt',
-      path: '/admin/notifications'
-    },
-    {
       name: 'Users',
       icon: 'ti-user',
       path: '/admin/users'
+    },
+    {
+      name: 'Teams',
+      icon: 'ti-flag-alt',
+      path: '/admin/notifications'
     }
   ],
   displaySidebar (value) {
