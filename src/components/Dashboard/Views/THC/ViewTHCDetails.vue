@@ -1,56 +1,23 @@
 <template>
-  <div class="card">
-    <div class="header">
-      <h4 class="title">Q1-2018 DEV THC</h4>
+  <div class="row">
+      <div class="col-md-6">
+        <topics-list></topics-list>
+      </div>
+      <div class="col-md-6">
+       <topic-details></topic-details>
+      </div>
     </div>
-    <div class="content">
-      Testing
-    </div>
-  </div>
 </template>
 <script>
+  import TopicsList from './TopicsList.vue'
+  import TopicDetails from './TopicDetails.vue'
+
   export default {
-    data () {
-      return {
-        healthCheck: {
-          title: 'Q2-2018 Dev Team',
-          team: 1,
-          conductor: 'Niklas',
-          template: 2
-        },
-        teams: [
-          {
-            id: 1,
-            name: 'DEV'
-          },
-          {
-            id: 2,
-            name: 'Marketing'
-          },
-          {
-            id: 3,
-            name: 'Sales'
-          }
-        ],
-        templates: [
-          {
-            id: 1,
-            name: 'DEV-2018'
-          },
-          {
-            id: 2,
-            name: 'DEV-2018'
-          }
-        ]
-      }
-    },
-    methods: {
-      saveTHC () {
-        alert('Your data: ' + JSON.stringify(this.healthCheck))
-      }
+    components: {
+      TopicsList,
+      TopicDetails
     }
   }
-
 </script>
 <style>
 
