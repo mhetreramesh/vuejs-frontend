@@ -1,7 +1,7 @@
 <template>
   <div class="card">
     <div class="header">
-      <h4 class="title">Start THC</h4>
+      <h4 class="title">Q1-2018 DEV THC</h4>
     </div>
     <div class="content">
       Testing

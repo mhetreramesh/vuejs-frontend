@@ -55,6 +55,7 @@ const routes = [
       {
         path: 'create-thc',
         name: 'CreateTHC',
+        title: 'Start THC',
         component: CreateTHC
       },
       {
