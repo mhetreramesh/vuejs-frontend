@@ -6,7 +6,7 @@
     </div>
     <div class="content">
       <ul class="list-unstyled team-members">
-          <li class="row" v-for="user in users">
+          <li class="row" v-for="user in users" :class="{ active: isActive(user) }">
             <a href="#" @click="userChanged(user)">
             <div class="col-xs-3">
               <div class="avatar">
@@ -53,7 +53,8 @@
             name: 'Flume Test',
             email: 'sdjsdj@sdsdsdf.com'
           }
-        ]
+        ],
+        currentUser: null
       }
     },
     methods: {
@@ -70,7 +71,11 @@
         }
       },
       userChanged (user) {
+        this.currentUser = user
         this.$root.$emit('userChanged', user)
+      },
+      isActive (user) {
+        return user === this.currentUser
       }
     }
   }
