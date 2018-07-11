@@ -1,15 +1,15 @@
 <template>
-  <div class="card card-user">
+  <div v-if="user" class="card card-user">
     <div class="image">
       <img src="static/img/background.jpg" alt="...">
     </div>
     <div class="content">
       <div class="author">
-        <img class="avatar border-white" src="static/img/faces/face-2.jpg" alt="...">
-        <h4 class="title">Chet Faker
+        <img class="avatar border-white" :src="user.image" alt="...">
+        <h4 class="title">{{user.name}}
           <br>
           <a href="#">
-            <small>@chetfaker</small>
+            <small>{{user.email}}</small>
           </a>
         </h4>
       </div>
@@ -36,6 +36,7 @@
   export default {
     data () {
       return {
+        user: null,
         details: [
           {
             title: '12',
@@ -63,6 +64,11 @@
           return 'col-md-3'
         }
       }
+    },
+    mounted: function () {
+      this.$root.$on('userChanged', (user) => {
+        this.user = user
+      })
     }
   }
 

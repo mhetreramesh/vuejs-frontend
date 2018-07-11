@@ -6,18 +6,18 @@
     </div>
     <div class="content">
       <ul class="list-unstyled team-members">
-          <li class="row" v-for="member in members">
-            <a href="#" onclick="alert('sddsdds')">
+          <li class="row" v-for="user in users">
+            <a href="#" @click="userChanged(user)">
             <div class="col-xs-3">
               <div class="avatar">
-                <img :src="member.image" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                <img :src="user.image" alt="Circle Image" class="img-circle img-no-padding img-responsive">
               </div>
             </div>
             <div class="col-xs-6">
-              <span class="text-black">{{member.name}}</span>
+              <span class="text-black">{{user.name}}</span>
               <br>
               <span class="text-info">
-                <small>{{member.email}}</small>
+                <small>{{user.email}}</small>
               </span>
             </div>
   
@@ -37,7 +37,7 @@
     data () {
       return {
         title: 'TB.Team',
-        members: [
+        users: [
           {
             image: 'static/img/faces/face-2.jpg',
             name: 'Dj Khaled',
@@ -68,6 +68,9 @@
           default:
             return 'text-success'
         }
+      },
+      userChanged (user) {
+        this.$root.$emit('userChanged', user)
       }
     }
   }
