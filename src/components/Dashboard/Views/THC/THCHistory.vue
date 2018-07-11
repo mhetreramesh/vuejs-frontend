@@ -12,7 +12,7 @@
     <div class="content">
       <ul class="list-unstyled team-members">
           <li class="row" v-for="healthCheck in healthChecks" :class="{ active: isActive(healthCheck) }">
-            <a href="#/admin/thc?id=1" @click="healthCheckChanged(healthCheck)">
+            <router-link :to="{ name: 'ViewTHCDetails', params: { id: healthCheck.id } }">
             <div class="col-xs-9">
               <span class="text-black">{{healthCheck.title}} <small>({{healthCheck.date}})</small></span>
               <br>
@@ -25,7 +25,7 @@
                 <i class="fa fa-angle-double-right" style="font-size: 18px;" title="Slackbot"></i>
               </button>
             </div>
-            </a>
+            </router-link>
           </li>
       </ul>
     </div>
@@ -38,18 +38,21 @@
         title: 'Team Health Check',
         healthChecks: [
           {
+            id: 1,
             title: '2018-Q2 DEV',
             date: '07-07-2018',
             memeberCount: 24,
             team: 'DEV'
           },
           {
+            id: 2,
             title: '2018-Q1 SYSOPS',
             date: '17-03-2018',
             memeberCount: 4,
             team: 'SYSOPS'
           },
           {
+            id: 3,
             title: '2017-Q4 DEV',
             date: '12-12-2017',
             memeberCount: 16,

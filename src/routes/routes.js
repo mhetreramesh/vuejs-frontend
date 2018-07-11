@@ -14,6 +14,7 @@ import TableList from 'src/components/Dashboard/Views/TableList.vue'
 import Users from 'src/components/Dashboard/Views/Users.vue'
 import Teams from 'src/components/Dashboard/Views/Teams.vue'
 import CreateTHC from 'src/components/Dashboard/Views/THC/CreateTHC.vue'
+import ViewTHCDetails from 'src/components/Dashboard/Views/THC/ViewTHCDetails.vue'
 
 const routes = [
   {
@@ -55,6 +56,11 @@ const routes = [
         path: 'create-thc',
         name: 'CreateTHC',
         component: CreateTHC
+      },
+      {
+        path: 'view-thc',
+        name: 'ViewTHCDetails',
+        component: ViewTHCDetails
       },
       {
         path: 'notifications',
