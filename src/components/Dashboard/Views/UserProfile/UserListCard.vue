@@ -19,11 +19,15 @@
               <span class="text-info">
                 <small>{{user.email}}</small>
               </span>
+              <br>
+              <span :class="getSlackIcon(user.slackname)">
+                <i class="fa fa-thumbs-up" style="font-size:24px"></i>
+              </span>
             </div>
   
             <div class="col-xs-3 text-right">
               <button class="btn btn-sm btn-success btn-icon">
-                <i class="fa fa-angle-double-right" style="font-size: 18px;"></i>
+                <i class="fa fa-angle-double-right" style="font-size: 18px;" title="Slackbot"></i>
               </button>
             </div>
             </a>
@@ -43,6 +47,7 @@
             name: 'Ramesh M',
             shortname: 'ram',
             email: 'sdsd@tb.com',
+            slackname: 'ssdsd',
             team: 'DEV'
           },
           {
@@ -50,6 +55,7 @@
             name: 'Sven',
             shortname: 'svt',
             email: 'rer@emdsd.com',
+            slackname: '',
             team: 'SYSOPS'
           },
           {
@@ -57,6 +63,7 @@
             name: 'Stannis',
             shortname: 'sas',
             email: 'sdjsdj@sdsdsdf.com',
+            slackname: 'ss',
             team: 'DEVPROJ'
           }
         ],
@@ -64,17 +71,8 @@
       }
     },
     methods: {
-      getemailClass (email) {
-        switch (email) {
-          case 'Offline':
-            return 'text-muted'
-          case 'Available':
-            return 'text-success'
-          case 'Busy':
-            return 'text-info'
-          default:
-            return 'text-success'
-        }
+      getSlackIcon (shortname) {
+        return (shortname !== '' ? 'text-success' : 'text-muted')
       },
       userChanged (user) {
         this.currentUser = user

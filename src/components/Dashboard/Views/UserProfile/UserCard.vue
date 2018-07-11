@@ -6,7 +6,7 @@
     <div class="content">
       <div class="author">
         <img class="avatar border-white" :src="user.image" alt="...">
-        <h4 class="title">{{user.name}}
+        <h4 class="title">{{user.name}}<i> ({{user.shortname}})</i>
           <br>
           <a href="#">
             <small>{{user.email}}</small>
@@ -14,9 +14,11 @@
         </h4>
       </div>
       <p class="description text-center">
-        "I like the way you work it
-        <br> No diggity
-        <br> I wanna bag it up"
+        <span :class="getSlackIcon(user.slackname)">
+          <i class="fa fa-thumbs-up" style="font-size:24px"></i>
+        </span>
+        <br>
+        <span class="badge">{{user.team}}</span>
       </p>
     </div>
     <hr>
@@ -33,6 +35,8 @@
   </div>
 </template>
 <script>
+  import UserListCard from './UserListCard.vue'
+
   export default {
     data () {
       return {
@@ -63,6 +67,9 @@
         } else {
           return 'col-md-3'
         }
+      },
+      getSlackIcon (shortname) {
+        return (shortname !== '' ? 'text-success' : 'text-muted')
       }
     },
     mounted: function () {
