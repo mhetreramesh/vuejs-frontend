@@ -1,8 +1,17 @@
 <template>
   <div class="card">
     <div class="header">
-      <h2 class="title">{{title}}</h2>
-      <hr>
+      <div class="row">
+      <h2 class="title col-xs-9">
+        {{title}}
+      </h2>
+      <div class="col-xs-3 text-right">
+          <a class="color-green" href="#">
+            <i class="fa fa-plus-circle fa-3x"></i>
+          </a>
+        </div>
+      </div>
+      <hr >
     </div>
     <div class="content">
       <ul class="list-unstyled team-members">
