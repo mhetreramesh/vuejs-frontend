@@ -4,9 +4,7 @@
       <div class="row">
         <h2 class="title col-xs-9">{{title}}</h2>
         <div class="col-xs-3 text-right">
-          <a class="btn btn-success" href="#">
-            Start Health Check
-          </a>
+          <router-link :to="{ name: 'CreateTHC' }" class="btn btn-success"><i class="fa fa-pencil-square-o"></i> Start Health Check</router-link>
         </div>
       </div>
       <hr>      
@@ -14,7 +12,7 @@
     <div class="content">
       <ul class="list-unstyled team-members">
           <li class="row" v-for="healthCheck in healthChecks" :class="{ active: isActive(healthCheck) }">
-            <a href="/" @click="healthCheckChanged(healthCheck)">
+            <a href="#/admin/thc?id=1" @click="healthCheckChanged(healthCheck)">
             <div class="col-xs-9">
               <span class="text-black">{{healthCheck.title}} <small>({{healthCheck.date}})</small></span>
               <br>

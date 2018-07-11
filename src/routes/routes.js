@@ -13,6 +13,7 @@ import Typography from 'src/components/Dashboard/Views/Typography.vue'
 import TableList from 'src/components/Dashboard/Views/TableList.vue'
 import Users from 'src/components/Dashboard/Views/Users.vue'
 import Teams from 'src/components/Dashboard/Views/Teams.vue'
+import CreateTHC from 'src/components/Dashboard/Views/THC/CreateTHC.vue'
 
 const routes = [
   {
@@ -49,6 +50,11 @@ const routes = [
         path: 'user',
         name: 'user',
         component: UserProfile
+      },
+      {
+        path: 'create-thc',
+        name: 'CreateTHC',
+        component: CreateTHC
       },
       {
         path: 'notifications',
