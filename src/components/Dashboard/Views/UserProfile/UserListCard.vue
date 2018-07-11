@@ -39,18 +39,18 @@
         title: 'TB.Team',
         users: [
           {
-            image: 'static/img/faces/face-2.jpg',
+            image: 'static/img/faces/face-3.jpg',
             name: 'Dj Khaled',
             email: 'sdsd@tb.com'
           },
           {
-            image: 'static/img/faces/face-2.jpg',
+            image: 'static/img/faces/face-1.jpg',
             name: 'Creative Tim',
             email: 'rer@emdsd.com'
           },
           {
             image: 'static/img/faces/face-2.jpg',
-            name: 'Flume sds',
+            name: 'Flume Test',
             email: 'sdjsdj@sdsdsdf.com'
           }
         ]
