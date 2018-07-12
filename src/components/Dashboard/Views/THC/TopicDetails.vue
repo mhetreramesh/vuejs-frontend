@@ -1,84 +1,30 @@
 <template>
-  <div v-if="user" class="card card-user">
-    <div class="image">
-      <img src="static/img/background.jpg" alt="...">
-    </div>
+  <div v-if="topic" class="card">
+    <div class="header">
+      <h3 class="title">{{topic.name}}</h3> <hr>
+    </div> 
     <div class="content">
-      <div class="author">
-        <img class="avatar border-white" :src="user.image" alt="...">
-        <h4 class="title">{{user.name}}<i> ({{user.shortname}})</i>
-          <br>
-          <a href="#">
-            <small>{{user.email}}</small>
-          </a>
-        </h4>
-      </div>
-      <p class="description text-center">
-        <span :class="getSlackIcon(user.slackname)">
-          <i class="fa fa-thumbs-up" style="font-size:24px"></i>
-        </span>
-        <br>
-        <span class="badge">{{user.team}}</span>
-      </p>
-    </div>
-    <hr>
-    <div class="text-center">
-      <div class="row">
-        <div v-for="(info,index) in details" :class="getClasses(index)">
-          <h5>{{info.title}}
-            <br>
-            <small>{{info.subTitle}}</small>
-          </h5>
-        </div>
-      </div>
+      <ul class="list-unstyled team-members">
+        <li class="row"><span class="badge"></span> <a href="#/admin/view-thc?id=1"><div class="col-xs-9"><span class="text-black">Mission</span> <br> <span class="text-black"><small>sdsd@tb.com</small></span> <br></div> <div class="col-xs-3 text-right"><button class="btn btn-sm btn-success btn-icon">12</button></div></a></li>
+        </ul>
     </div>
   </div>
 </template>
 <script>
-
-  export default {
-    data () {
-      return {
-        user: null,
-        details: [
-          {
-            title: '12',
-            subTitle: 'THC Attended'
-          },
-          {
-            title: '22',
-            subTitle: 'Questions Answered'
-          },
-          {
-            title: '10',
-            subTitle: 'Followers'
-          }
-        ]
-      }
-    },
-    methods: {
-      getClasses (index) {
-        var remainder = index % 3
-        if (remainder === 0) {
-          return 'col-md-3 col-md-offset-1'
-        } else if (remainder === 2) {
-          return 'col-md-4'
-        } else {
-          return 'col-md-3'
-        }
-      },
-      getSlackIcon (shortname) {
-        return (shortname !== '' ? 'text-success' : 'text-muted')
-      }
-    },
-    mounted: function () {
-      this.$root.$on('topicChanged', (user) => {
-        this.user = user
-      })
+export default {
+  data () {
+    return {
+      topic: null
     }
+  },
+  methods: {
+  },
+  mounted: function () {
+    this.$root.$on('topicChanged', topic => {
+      this.topic = topic
+    })
   }
-
+}
 </script>
 <style>
-  
 </style>
