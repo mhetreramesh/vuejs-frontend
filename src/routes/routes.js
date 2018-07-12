@@ -15,12 +15,12 @@ import Users from 'src/components/Dashboard/Views/Users.vue'
 import Teams from 'src/components/Dashboard/Views/Teams.vue'
 import CreateTHC from 'src/components/Dashboard/Views/THC/CreateTHC.vue'
 import ViewTHCDetails from 'src/components/Dashboard/Views/THC/ViewTHCDetails.vue'
+import Home from 'src/components/Dashboard/Views/Home.vue'
 
 const routes = [
   {
     path: '/',
-    component: DashboardLayout,
-    redirect: '/admin/overview'
+    component: Home
   },
   {
     path: '/admin',
