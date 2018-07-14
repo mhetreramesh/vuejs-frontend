@@ -36,42 +36,42 @@
         topics: [
           {
             name: 'Mission',
-            details: 'sdsd@tb.com',
+            details: 'Mission',
             red: 0,
             green: 10,
             yellow: 3
           },
           {
             name: 'Teamwork',
-            details: 'rer@emdsd.com',
+            details: 'Teamwork',
             red: 1,
             green: 7,
             yellow: 5
           },
           {
             name: 'Pawns or Players',
-            details: 'sdjsdj@sdsdsdf.com',
+            details: 'Pawns or Players',
             red: 3,
             green: 4,
             yellow: 6
           },
           {
             name: 'Suitable Process',
-            details: 'sdjsdj@sdsdsdf.com',
+            details: 'Suitable Process',
             red: 3,
             green: 4,
             yellow: 6
           },
           {
             name: 'Delivering Quality',
-            details: 'sdjsdj@sdsdsdf.com',
+            details: 'Delivering Quality',
             red: 3,
             green: 4,
             yellow: 6
           },
           {
             name: 'Data Driven Decisions',
-            details: 'sdjsdj@sdsdsdf.com',
+            details: 'Data Driven Decisions',
             red: 3,
             green: 4,
             yellow: 6
