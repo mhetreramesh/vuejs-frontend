@@ -41,7 +41,6 @@ export default {
        * The Auth2 parameters, as seen on
        * https://developers.google.com/identity/sign-in/web/reference#gapiauth2initparams.
        * As the very least, a valid client_id must present.
-       * @type {Object}
        */
       googleSignInParams: {
         client_id: '358248257655-fqm8410v1k76c9g5jisk8etu0i6fba30.apps.googleusercontent.com'
@@ -74,43 +73,41 @@ export default {
   color: #fff;
   box-shadow: 0 3px 0 #0f69ff;
 }
-
 body {
-            font-family: "Varela Round", sans-serif;
-            margin: 0;
-            padding: 0;
-            background: radial-gradient(#57bfc7, #45a6b3);
-        }
+    font-family: "Varela Round", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(#57bfc7, #45a6b3);
+}
+.container {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
 
-        .container {
-            display: flex;
-            height: 100vh;
-            align-items: center;
-            justify-content: center;
-        }
+.content {
+    text-align: center;
+}
 
-        .content {
-            text-align: center;
-        }
+.logo {
+    margin-right: 40px;
+    margin-bottom: 30px;
+}
 
-        .logo {
-            margin-right: 40px;
-            margin-bottom: 30px;
-        }
+.links a {
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+}
 
-        .links a {
-            font-size: 1.25rem;
-            text-decoration: none;
-            color: white;
-            margin: 10px;
-        }
+@media all and (max-width: 500px) {
 
-        @media all and (max-width: 500px) {
-
-            .links {
-                display: flex;
-                flex-direction: column;
-            }
-        }
-        .st0{fill:url(#SVGID_1_);} .st1{fill:url(#SVGID_2_);} .st2{fill:url(#SVGID_3_);} .st3{fill:url(#SVGID_4_);} .st5{fill:#FDD800;} .st6{fill:none;stroke:#231F20;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st7{fill:none;stroke:#EB0D8C;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st8{fill:none;stroke:#4EC3C8;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st9{fill:#FFFFFF;stroke:#4EC3C8;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st10{fill:#4EC3C8;} .st11{fill:none;stroke:#49C8F5;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st12{fill:none;stroke:#FEDA00;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st13{fill:#231F20;} .st14{fill:#DBDAD9;stroke:#193946;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st15{fill:none;stroke:#193946;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st16{fill:#F8B232;stroke:#193946;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st17{fill:#FFFFFF;stroke:#193946;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st18{fill:#193946;} .st19{fill:none;stroke:#F1F2F2;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st20{clip-path:url(#XMLID_10_);fill:none;stroke:#E4E5E6;stroke-width:33;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st21{clip-path:url(#XMLID_11_);fill:none;stroke:#E4E5E6;stroke-width:33;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st22{clip-path:url(#XMLID_11_);fill:none;stroke:#E4E5E6;stroke-width:25;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st23{clip-path:url(#XMLID_12_);fill:none;stroke:#BE8A25;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st24{clip-path:url(#XMLID_13_);fill:none;stroke:#BE8A25;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st25{fill:none;stroke:#F1F2F2;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st26{fill:none;stroke:#F8B232;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st27{clip-path:url(#XMLID_14_);fill:none;stroke:#E4E5E6;stroke-width:33;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st28{clip-path:url(#XMLID_15_);fill:none;stroke:#E4E5E6;stroke-width:33;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st29{clip-path:url(#XMLID_15_);fill:none;stroke:#E4E5E6;stroke-width:25;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st30{clip-path:url(#XMLID_16_);fill:none;stroke:#BE8A25;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st31{clip-path:url(#XMLID_17_);fill:none;stroke:#BE8A25;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st32{fill:#FEDA00;} .st33{fill:#FFFFFF;stroke:#FEDA00;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st34{fill:#49C8F5;} .st35{fill:#EB0D8C;} .st36{fill:#FFFFFF;stroke:#EB0D8C;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st37{fill:#F8B232;} .st38{fill:#FFFFFF;stroke:#F8B232;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st39{fill:#DBDAD9;} .st40{fill:none;stroke:#DBDAD9;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st41{fill:#FFFFFF;stroke:#DBDAD9;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st42{fill:#DBDAD9;stroke:#193946;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+    .links {
+        display: flex;
+        flex-direction: column;
+    }
+}
+.st0{fill:url(#SVGID_1_);} .st1{fill:url(#SVGID_2_);} .st2{fill:url(#SVGID_3_);} .st3{fill:url(#SVGID_4_);} .st5{fill:#FDD800;} .st6{fill:none;stroke:#231F20;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st7{fill:none;stroke:#EB0D8C;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st8{fill:none;stroke:#4EC3C8;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st9{fill:#FFFFFF;stroke:#4EC3C8;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st10{fill:#4EC3C8;} .st11{fill:none;stroke:#49C8F5;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st12{fill:none;stroke:#FEDA00;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st13{fill:#231F20;} .st14{fill:#DBDAD9;stroke:#193946;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st15{fill:none;stroke:#193946;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st16{fill:#F8B232;stroke:#193946;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st17{fill:#FFFFFF;stroke:#193946;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st18{fill:#193946;} .st19{fill:none;stroke:#F1F2F2;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st20{clip-path:url(#XMLID_10_);fill:none;stroke:#E4E5E6;stroke-width:33;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st21{clip-path:url(#XMLID_11_);fill:none;stroke:#E4E5E6;stroke-width:33;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st22{clip-path:url(#XMLID_11_);fill:none;stroke:#E4E5E6;stroke-width:25;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st23{clip-path:url(#XMLID_12_);fill:none;stroke:#BE8A25;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st24{clip-path:url(#XMLID_13_);fill:none;stroke:#BE8A25;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st25{fill:none;stroke:#F1F2F2;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st26{fill:none;stroke:#F8B232;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st27{clip-path:url(#XMLID_14_);fill:none;stroke:#E4E5E6;stroke-width:33;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st28{clip-path:url(#XMLID_15_);fill:none;stroke:#E4E5E6;stroke-width:33;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st29{clip-path:url(#XMLID_15_);fill:none;stroke:#E4E5E6;stroke-width:25;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st30{clip-path:url(#XMLID_16_);fill:none;stroke:#BE8A25;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st31{clip-path:url(#XMLID_17_);fill:none;stroke:#BE8A25;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st32{fill:#FEDA00;} .st33{fill:#FFFFFF;stroke:#FEDA00;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st34{fill:#49C8F5;} .st35{fill:#EB0D8C;} .st36{fill:#FFFFFF;stroke:#EB0D8C;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st37{fill:#F8B232;} .st38{fill:#FFFFFF;stroke:#F8B232;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st39{fill:#DBDAD9;} .st40{fill:none;stroke:#DBDAD9;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st41{fill:#FFFFFF;stroke:#DBDAD9;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} .st42{fill:#DBDAD9;stroke:#193946;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 </style>
