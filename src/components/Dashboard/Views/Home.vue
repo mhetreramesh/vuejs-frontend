@@ -86,10 +86,6 @@ body {
     justify-content: center;
 }
 
-.content {
-    text-align: center;
-}
-
 .logo {
     margin-right: 40px;
     margin-bottom: 30px;
