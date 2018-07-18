@@ -8,6 +8,7 @@
       </div>
     </div>
 </template>
+
 <script>
   import TopicsList from './TopicsList.vue'
   import TopicDetails from './TopicDetails.vue'
