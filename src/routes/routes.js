@@ -17,14 +17,24 @@ import CreateTHC from 'src/components/Dashboard/Views/THC/CreateTHC.vue'
 import ViewTHCDetails from 'src/components/Dashboard/Views/THC/ViewTHCDetails.vue'
 import Home from 'src/components/Dashboard/Views/Home.vue'
 
+import auth from 'src/components/auth'
+
 const routes = [
   {
     path: '/',
     component: Home
   },
   {
+    path: '/logout',
+    beforeEnter (to, from, next) {
+      auth.logout()
+      next('/')
+    }
+  },
+  {
     path: '/admin',
     component: DashboardLayout,
+    beforeEnter: requireAuth,
     redirect: '/admin/thc',
     children: [
       {
@@ -101,5 +111,16 @@ function view(name) {
    var res= require('../components/Dashboard/Views/' + name + '.vue');
    return res;
 };**/
+
+function requireAuth (to, from, next) {
+  if (!auth.loggedIn()) {
+    next({
+      path: '/',
+      query: { redirect: to.fullPath }
+    })
+  } else {
+    next()
+  }
+}
 
 export default routes

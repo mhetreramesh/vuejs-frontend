@@ -30,6 +30,8 @@
 </template>
 
 <script>
+import auth from 'src/components/auth'
+
 export default {
   data () {
     return {
@@ -47,11 +49,18 @@ export default {
     onSignInSuccess (googleUser) {
       // `googleUser` is the GoogleUser object that represents the just-signed-in user.
       // See https://developers.google.com/identity/sign-in/web/reference#users
-      const profile = googleUser.getBasicProfile() // etc etc
+      const profile = googleUser.getBasicProfile()
       if (profile.getEmail().replace(/.*@/, '') !== 'tradebyte.com') {
         alert('Login allowed only with tradebyte account')
         return false
       }
+      auth.login(googleUser, loggedIn => {
+        if (!loggedIn) {
+          this.error = true
+        } else {
+          this.$router.push({name: 'overview'})
+        }
+      })
     },
     onSignInError (error) {
       // `error` contains any error occurred.
