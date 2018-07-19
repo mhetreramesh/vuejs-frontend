@@ -47,9 +47,11 @@ export default {
     onSignInSuccess (googleUser) {
       // `googleUser` is the GoogleUser object that represents the just-signed-in user.
       // See https://developers.google.com/identity/sign-in/web/reference#users
-      console.log(googleUser)
       const profile = googleUser.getBasicProfile() // etc etc
-      console.log(profile)
+      if (profile.getEmail().replace(/.*@/, '') !== 'tradebyte.com') {
+        alert('Login allowed only with tradebyte account')
+        return false
+      }
     },
     onSignInError (error) {
       // `error` contains any error occurred.
