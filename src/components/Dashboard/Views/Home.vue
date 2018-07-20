@@ -41,7 +41,7 @@ export default {
        * As the very least, a valid client_id must present.
        */
       googleSignInParams: {
-        client_id: '358248257655-fqm8410v1k76c9g5jisk8etu0i6fba30.apps.googleusercontent.com'
+        client_id: process.env.GOOGLE_LINK
       }
     }
   },

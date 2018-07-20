@@ -1,6 +1,6 @@
 export default {
-  login (googleUser) {
-    var cb = arguments[arguments.length - 1]
+  login (googleUser, cb) {
+    // var cb = arguments[arguments.length - 1]
     /* this.$http.post('http://your-backend-server.com/auth/google', {
       code: googleUser,
       redirect_uri: 'postmessage'
@@ -24,7 +24,7 @@ export default {
       console.log('BACKEND SERVER - SIGN-IN ERROR', data)
     }) */
     if (localStorage.token) {
-      cb(true)
+      // cb(true)
       return
     }
     var token = 'Bearer fdfdfdfdf'
@@ -34,7 +34,7 @@ export default {
       window.localStorage.setItem('user', JSON.stringify('sdsdsdsdsd'))
       window.localStorage.setItem('token', token)
     }
-    if (cb) cb(true)
+    // if (cb) cb(true)
   },
   getToken () {
     return localStorage.token
