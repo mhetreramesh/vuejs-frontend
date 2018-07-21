@@ -5,8 +5,6 @@
 This project is a vue version of [Paper-dashboard](https://www.creative-tim.com/product/paper-dashboard)
 designed for vue js.The dashboard includes vue-router and vuex
 
-![](http://i.imgur.com/3iC1hOs.gif)
-
 ## Build Setup
 
 ### install dependencies
@@ -20,14 +18,4 @@ designed for vue js.The dashboard includes vue-router and vuex
 ### run and watch unit tests
 `npm run unit:watch`
 
-## Contribution guide
-* `npm install` or `yarn install`
-* If you use 3rd party libraries/components in more than 1 place make sure to define them globally for ease of use
-  Example
-  ```js
-  Object.defineProperty(Vue.prototype, '$Chartist', {
-    get() {
-      return Chartist;
-    }
-  });
-  ```
+![](http://i.imgur.com/3iC1hOs.gif)
