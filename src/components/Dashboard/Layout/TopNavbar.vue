@@ -20,6 +20,14 @@
               </p>
             </a>
           </li>
+          <li>
+            <a href="/#/logout" class="btn-rotate">
+              <i class="ti-user"></i>
+              <p>
+                Logout
+              </p>
+            </a>
+          </li>
         </ul>
       </div>
     </div>

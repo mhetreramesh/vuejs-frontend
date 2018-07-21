@@ -41,8 +41,13 @@ export default {
        * As the very least, a valid client_id must present.
        */
       googleSignInParams: {
-        client_id: process.env.GOOGLE_LINK
+        client_id: '358248257655-fqm8410v1k76c9g5jisk8etu0i6fba30.apps.googleusercontent.com' // process.env.GOOGLE_LINK
       }
+    }
+  },
+  created: function () {
+    if (auth.login) {
+      this.$router.push({name: 'overview'})
     }
   },
   methods: {
