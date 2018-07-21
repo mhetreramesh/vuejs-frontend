@@ -54,13 +54,7 @@ export default {
         alert('Login allowed only with tradebyte account')
         return false
       }
-      auth.login(googleUser, loggedIn => {
-        if (!loggedIn) {
-          this.error = true
-        } else {
-          this.$router.push({name: 'overview'})
-        }
-      })
+      auth.login(googleUser, this.$router)
     },
     onSignInError (error) {
       // `error` contains any error occurred.
