@@ -23,7 +23,6 @@
       TeamsList
     }
   }
-
 </script>
 <style>
 
