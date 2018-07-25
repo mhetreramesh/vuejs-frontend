@@ -18,6 +18,10 @@ import './assets/sass/paper-dashboard.scss'
 import 'es6-promise/auto'
 import GSignInButton from 'vue-google-signin-button'
 
+import VueResource from 'vue-resource'
+
+Vue.use(VueResource)
+
 // plugin setup
 Vue.use(VueRouter)
 Vue.use(GlobalComponents)

@@ -19,7 +19,8 @@
     "v-click-outside": "0.0.8",
     "vue": "^2.3.0",
     "vue-google-signin-button": "^1.0.2",
-    "vue-router": "^2.2.0"
+    "vue-router": "^2.2.0",
+    "vue-resource": "*"
   },
   "devDependencies": {
     "autoprefixer": "^6.7.2",
